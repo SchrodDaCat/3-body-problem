@@ -1,2 +1,2 @@
 # 3-body-problem
-a simulation of how 3 bodies interact and crash into each other
+A simulation of the 3-body problem
