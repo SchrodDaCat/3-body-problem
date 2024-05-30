@@ -1,23 +1,25 @@
 import pgzrun
 import numpy
 
-m1=100
-m2=100
-m3=100
-v1 = numpy.array([0, 47])
-v2 = numpy.array([-10, -30])
-v3 = numpy.array([20, -25])
-p1 = numpy.array([500,280])
-p2 = numpy.array([110,330])
-p3 = numpy.array([340,150])
-G = 100000
+WIDTH = 600
+HEIGHT = 550
+m1 = 1
+m2 = 1
+m3 = 1
+v1 = numpy.array([50, -50])
+v2 = numpy.array([50, 50])
+v3 = numpy.array([-50, -50])
+p1 = numpy.array([300, 150])
+p2 = numpy.array([150, 400])
+p3 = numpy.array([450, 400])
+G = 15000000
 MIN_R = 40.0
 
 def draw():
-    screen.fill((255 ,255 ,255))
-    screen.draw.filled_circle(p2, 25.0, (120, 50, 255))
-    screen.draw.filled_circle(p1, 25.0, (150, 200, 100))
-    screen.draw.filled_circle(p3, 25.0, (150, 100, 50))
+    screen.clear()
+    screen.draw.filled_circle(p1, 25.0, (150, 0, 0))
+    screen.draw.filled_circle(p2, 25.0, (0, 150, 0))
+    screen.draw.filled_circle(p3, 25.0, (0, 0, 150))
 
 def update(dt):
     global p1,v1,p2,v2,p3,v3
